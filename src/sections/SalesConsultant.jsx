@@ -3,10 +3,10 @@ import React from "react"
 
 export default function SalesConsultant() {
   const clientPhotos = [
-    "/clients/client-1.jpg",
-    "/clients/client-2.jpg",
-    "/clients/client-3.jpg",
-    "/clients/client-4.jpg",
+    "./clients/client-1.jpg",
+    "./clients/client-2.jpg",
+    "./clients/client-3.jpg",
+    "./clients/client-4.jpg",
   ]
 
   return (
@@ -25,7 +25,7 @@ export default function SalesConsultant() {
             <div className="flex justify-center lg:justify-start">
               <div className="relative w-64 h-64 rounded-2xl overflow-hidden border border-zinc-800 shadow-xl shadow-black/40">
                 <img
-                  src="/Sales.jpg"
+                  src="./Sales.jpg"
                   alt="Sales Resmi Mitsubishi"
                   className="w-full h-full object-cover"
                 />
