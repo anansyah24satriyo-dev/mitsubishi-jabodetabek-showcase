@@ -1,5 +1,5 @@
 export function buildWhatsappMessage(car) {
-  const phone = "6281234567890" // GANTI nomor kamu
+  const phone = "6283111778286" // GANTI nomor kamu
 
   const message = `
 Halo, saya tertarik dengan mobil berikut:

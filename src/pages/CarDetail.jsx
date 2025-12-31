@@ -80,7 +80,7 @@ export default function CarDetail() {
             {/* CTA */}
             <div className="flex gap-4 pt-4">
               <a
-                href="https://wa.me/628xxxxxxxxx"
+                href="https://wa.me/6283111778286"
                 target="_blank"
                 className="flex-1 bg-red-600 text-center px-6 py-4 rounded-xl font-semibold hover:bg-red-700 transition"
               >
