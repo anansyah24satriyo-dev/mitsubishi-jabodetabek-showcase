@@ -27,9 +27,9 @@ export default function Footer() {
         <div>
           <h4 className="text-white font-semibold mb-4">Contact</h4>
           <ul className="space-y-2 text-sm">
-            <li>📞 +62 8xxx xxxx</li>
-            <li>📍 Indonesia</li>
-            <li>🕘 08:00 – 20:00</li>
+            <li>📞 +62 8311 1778 286</li>
+            <li>📍 Jabodetabek</li>
+            <li>🕘 24:00 Jam</li>
           </ul>
         </div>
 
@@ -38,7 +38,7 @@ export default function Footer() {
             Test Drive
           </h4>
           <a
-            href="https://wa.me/628xxxxxxxxx"
+            href="https://wa.me/6283111778286"
             target="_blank"
             className="inline-block bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition"
           >

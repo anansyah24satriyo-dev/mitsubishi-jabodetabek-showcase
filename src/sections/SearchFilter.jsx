@@ -33,10 +33,14 @@ export default function SearchFilter({ filters, setFilters }) {
                 }
               >
                 <option value="">All Models</option>
-                <option>Pajero Sport</option>
-                <option>Xpander</option>
+                <option>X force</option>
+                <option>Xpander exceed tourer</option>
+                <option>Xpander ultimate</option>
+                <option>Xpander cross</option>
+                <option>Destinator</option>
+                <option>Pajero dakar sport</option>
                 <option>Triton</option>
-                <option>Outlander</option>
+                <option>L300</option>
               </select>
             </div>
 

@@ -2,6 +2,13 @@
 import React from "react"
 
 export default function SalesConsultant() {
+  const clientPhotos = [
+    "/clients/client-1.jpg",
+    "/clients/client-2.jpg",
+    "/clients/client-3.jpg",
+    "/clients/client-4.jpg",
+  ]
+
   return (
     <section
       id="sales"
@@ -11,27 +18,50 @@ export default function SalesConsultant() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
-          {/* PHOTO */}
-          <div className="flex justify-center lg:justify-start">
-            <div
-              className="
-                relative w-64 h-64 rounded-2xl overflow-hidden
-                border border-zinc-800
-                shadow-xl shadow-black/40
-              "
-            >
-              <img
-                src="/Sales.jpg"
-                alt="Sales Resmi Mitsubishi"
-                className="w-full h-full object-cover"
-              />
+          {/* LEFT */}
+          <div className="space-y-10">
 
-              {/* RED ACCENT */}
-              <div className="absolute bottom-0 left-0 h-1 w-full bg-red-600" />
+            {/* PHOTO */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="relative w-64 h-64 rounded-2xl overflow-hidden border border-zinc-800 shadow-xl shadow-black/40">
+                <img
+                  src="/Sales.jpg"
+                  alt="Sales Resmi Mitsubishi"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute bottom-0 left-0 h-1 w-full bg-red-600" />
+              </div>
             </div>
+
+            {/* CLIENT GALLERY */}
+            <div>
+              <p className="text-sm text-gray-400 mb-4">
+                Dokumentasi Serah Terima Unit
+              </p>
+
+              <div className="grid grid-cols-4 gap-3 max-w-sm">
+                {clientPhotos.map((img, i) => (
+                  <div
+                    key={i}
+                    className="group relative aspect-square rounded-lg overflow-hidden border border-zinc-800"
+                  >
+                    <img
+                      src={img}
+                      alt="Client Mitsubishi"
+                      className="w-full h-full object-cover grayscale
+                                 transition-all duration-300
+                                 group-hover:grayscale-0
+                                 group-hover:scale-105"
+                    />
+                    <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-red-600 transition-all duration-300 group-hover:w-full" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
 
-          {/* INFO */}
+          {/* RIGHT */}
           <div className="space-y-7 max-w-xl">
             <h2 className="text-3xl font-bold leading-tight">
               Dibantu Langsung oleh <br />
@@ -46,39 +76,25 @@ export default function SalesConsultant() {
               hingga unit diterima di rumah Anda.
             </p>
 
-            {/* BENEFITS */}
             <ul className="space-y-2 text-sm text-gray-300">
-              <li className="flex gap-2">
-                <span className="text-red-600">✔</span>
-                Konsultasi kebutuhan & budget
-              </li>
-              <li className="flex gap-2">
-                <span className="text-red-600">✔</span>
-                Info promo & unit ready
-              </li>
-              <li className="flex gap-2">
-                <span className="text-red-600">✔</span>
-                Test drive & simulasi kredit
-              </li>
-              <li className="flex gap-2">
-                <span className="text-red-600">✔</span>
-                Harga bisa dinegosiasikan
-              </li>
+              {[
+                "Konsultasi kebutuhan & budget",
+                "Info promo & unit ready",
+                "Test drive & simulasi kredit",
+                "Harga bisa dinegosiasikan",
+              ].map((item, i) => (
+                <li key={i} className="flex gap-2">
+                  <span className="text-red-600">✔</span>
+                  {item}
+                </li>
+              ))}
             </ul>
 
-            {/* CTA */}
             <div className="pt-4">
               <a
-                href="https://wa.me/628xxxxxxxxx"
+                href="https://wa.me/6283111778286"
                 target="_blank"
-                className="
-                  inline-flex items-center gap-3
-                  bg-red-600 px-8 py-4 rounded-xl
-                  font-semibold
-                  transition
-                  hover:bg-red-700
-                  hover:scale-[1.02]
-                "
+                className="inline-flex items-center gap-3 bg-red-600 px-8 py-4 rounded-xl font-semibold transition hover:bg-red-700 hover:scale-[1.02]"
               >
                 Chat WhatsApp Sekarang
                 <span className="text-lg">→</span>

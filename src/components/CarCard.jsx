@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import React from "react"
+
 export default function CarCard({
   id,
   image,
@@ -45,13 +46,19 @@ export default function CarCard({
       <div className="p-5">
         <h3 className="text-lg font-semibold">{name}</h3>
 
-        {/* TRANSMISSION (SEARCH CONTEXT) */}
+        {/* TRANSMISSION */}
         <p className="text-sm text-gray-400 mt-1">
           {transmission}
         </p>
 
+        {/* PRICE */}
         <p className="mt-4 font-bold text-red-600">
           {price}
+        </p>
+
+        {/* PRICE NOTE */}
+        <p className="text-[11px] text-gray-500 leading-tight mt-1">
+          *Harga dapat berubah sewaktu-waktu
         </p>
       </div>
     </Link>
