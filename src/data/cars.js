@@ -1,12 +1,4 @@
 // src/data/cars.js
-import xforce from "../assets/cars/xforce.jpeg"
-import xpanderexceedtourer from "../assets/cars/xpanderexceedtourer.jpeg"
-import xpanderultimate from "../assets/cars/xpanderultimate.jpeg"
-import xpandercross from "../assets/cars/xpandercross.jpeg"
-import destinator from "../assets/cars/destinator.jpeg"
-import pajerosport from "../assets/cars/pajerosport.jpeg"
-import triton from "../assets/cars/triton.jpeg"
-import l300 from "../assets/cars/l300.jpeg"
 
 export const cars = [
   {
@@ -16,7 +8,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 429,
     price: "Rp 429,350,000",
-    image: xforce,
+    image: "/cars/xforce.jpeg",
     featured: true,
     popular: true,
   },
@@ -27,7 +19,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 297,
     price: "Rp 297,900,000",
-    image: xpanderexceedtourer,
+    image: "/cars/xpanderexceedtourer.jpeg",
     featured: true,
     popular: true,
   },
@@ -38,7 +30,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 337,
     price: "Rp 337,800,000",
-    image: xpanderultimate,
+    image: "/cars/xpanderultimate.jpeg",
     featured: false,
     popular: true,
   },
@@ -49,7 +41,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 364,
     price: "Rp 364,200,000",
-    image: xpandercross,
+    image: "/cars/xpandercross.jpeg",
     featured: true,
     popular: false,
   },
@@ -60,7 +52,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 485,
     price: "Rp 485,000,000",
-    image: destinator,
+    image: "/cars/destinator.jpeg",
     featured: true,
     popular: false,
   },
@@ -71,7 +63,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 665,
     price: "Rp 665,300,000",
-    image: pajerosport,
+    image: "/cars/pajerosport.jpeg",
     featured: true,
     popular: false,
   },
@@ -82,7 +74,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 543,
     price: "Rp 543,750,000",
-    image: triton,
+    image: "/cars/triton.jpeg",
     featured: true,
     popular: false,
   },
@@ -93,8 +85,9 @@ export const cars = [
     transmission: "Manual",
     priceValue: 251,
     price: "Rp 251,200,000",
-    image: l300,
+    image: "/cars/l300.jpeg",
     featured: true,
     popular: false,
   },
 ]
+
