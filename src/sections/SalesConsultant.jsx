@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 export default function SalesConsultant() {
   const clientPhotos = [
@@ -7,6 +7,8 @@ export default function SalesConsultant() {
     "/clients/client3.jpeg",
     "/clients/client4.jpeg",
   ]
+
+  const [activeImage, setActiveImage] = useState(null)
 
   return (
     <section
@@ -39,9 +41,10 @@ export default function SalesConsultant() {
 
               <div className="grid grid-cols-4 gap-3 max-w-sm">
                 {clientPhotos.map((img, i) => (
-                  <div
+                  <button
                     key={i}
-                    className="group relative aspect-square rounded-lg overflow-hidden border border-zinc-800"
+                    onClick={() => setActiveImage(img)}
+                    className="group relative aspect-square rounded-lg overflow-hidden border border-zinc-800 focus:outline-none"
                   >
                     <img
                       src={img}
@@ -53,21 +56,19 @@ export default function SalesConsultant() {
                       "
                       loading="lazy"
                     />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition" />
                     <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-red-600 transition-all duration-300 group-hover:w-full" />
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
-
           </div>
 
           {/* RIGHT */}
           <div className="space-y-7 max-w-xl">
             <h2 className="text-3xl font-bold leading-tight">
               Dibantu Langsung oleh <br />
-              <span className="text-red-600">
-                Sales Resmi Mitsubishi
-              </span>
+              <span className="text-red-600">Sales Resmi Mitsubishi</span>
             </h2>
 
             <p className="text-gray-400 leading-relaxed">
@@ -111,9 +112,47 @@ export default function SalesConsultant() {
               </p>
             </div>
           </div>
-
         </div>
       </div>
+
+      {/* ===== IMAGE MODAL ===== */}
+      {activeImage && (
+        <div
+          onClick={() => setActiveImage(null)}
+          className="
+            fixed inset-0 z-50
+            bg-black/80 backdrop-blur-sm
+            flex items-center justify-center
+            px-4
+          "
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative max-w-4xl w-full"
+          >
+            <button
+              onClick={() => setActiveImage(null)}
+              className="
+                absolute -top-10 right-0
+                text-white text-2xl
+                hover:text-red-600 transition
+              "
+            >
+              ✕
+            </button>
+
+            <img
+              src={activeImage}
+              alt="Dokumentasi Client Mitsubishi"
+              className="
+                w-full max-h-[80vh]
+                object-contain rounded-xl
+                shadow-2xl
+              "
+            />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
