@@ -39,7 +39,7 @@ export default function Hero() {
         {/* IMAGE */}
         <div className="lg:w-1/2">
           <img
-            src="./Hero.jpeg"
+            src="./Hero.jpg"
             alt="Mitsubishi Car"
             className="w-full max-w-xl mx-auto drop-shadow-[0_40px_80px_rgba(0,0,0,0.6)]"
           />
