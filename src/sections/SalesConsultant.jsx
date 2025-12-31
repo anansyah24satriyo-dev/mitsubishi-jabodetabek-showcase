@@ -1,4 +1,3 @@
-// src/sections/SalesConsultant.jsx
 import React from "react"
 
 export default function SalesConsultant() {
@@ -15,17 +14,16 @@ export default function SalesConsultant() {
       className="bg-gradient-to-b from-zinc-950 to-black text-white py-28"
     >
       <div className="container mx-auto px-6">
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
           {/* LEFT */}
           <div className="space-y-10">
 
-            {/* PHOTO */}
+            {/* SALES PHOTO */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative w-64 h-64 rounded-2xl overflow-hidden border border-zinc-800 shadow-xl shadow-black/40">
                 <img
-                  src="./Sales.jpg"
+                  src="/Sales.png"
                   alt="Sales Resmi Mitsubishi"
                   className="w-full h-full object-cover"
                 />
@@ -47,11 +45,13 @@ export default function SalesConsultant() {
                   >
                     <img
                       src={img}
-                      alt="Client Mitsubishi"
-                      className="w-full h-full object-cover grayscale
-                                 transition-all duration-300
-                                 group-hover:grayscale-0
-                                 group-hover:scale-105"
+                      alt={`Client Mitsubishi ${i + 1}`}
+                      className="
+                        w-full h-full object-cover
+                        transition-all duration-300
+                        group-hover:scale-105
+                      "
+                      loading="lazy"
                     />
                     <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-red-600 transition-all duration-300 group-hover:w-full" />
                   </div>
@@ -94,7 +94,13 @@ export default function SalesConsultant() {
               <a
                 href="https://wa.me/6283111778286"
                 target="_blank"
-                className="inline-flex items-center gap-3 bg-red-600 px-8 py-4 rounded-xl font-semibold transition hover:bg-red-700 hover:scale-[1.02]"
+                rel="noreferrer"
+                className="
+                  inline-flex items-center gap-3
+                  bg-red-600 px-8 py-4 rounded-xl
+                  font-semibold transition
+                  hover:bg-red-700 hover:scale-[1.02]
+                "
               >
                 Chat WhatsApp Sekarang
                 <span className="text-lg">→</span>
