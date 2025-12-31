@@ -4,7 +4,7 @@ import xpanderexceedTourer from "../assets/cars/xpanderexceedTourer.jpeg"
 import xpanderultimate from "../assets/cars/xpanderultimate.jpeg"
 import xpandercross from "../assets/cars/xpandercross.jpeg"
 import destinator from "../assets/cars/destinator.jpeg"
-import pajeroSport from "../assets/cars/pajeroSport.jpeg"
+import pajerosport from "../assets/cars/pajerosport.jpeg"
 import triton from "../assets/cars/triton.jpeg"
 import l300 from "../assets/cars/l300.jpeg"
 
@@ -71,7 +71,7 @@ export const cars = [
     transmission: "Automatic",
     priceValue: 665,
     price: "Rp 665,300,000",
-    image: pajeroSport,
+    image: pajerosport,
     featured: true,
     popular: false,
   },
