@@ -3,10 +3,10 @@ import React from "react"
 
 export default function SalesConsultant() {
   const clientPhotos = [
-    "./clients/client-1.jpg",
-    "./clients/client-2.jpg",
-    "./clients/client-3.jpg",
-    "./clients/client-4.jpg",
+    "/clients/client1.jpeg",
+    "/clients/client2.jpeg",
+    "/clients/client3.jpeg",
+    "/clients/client4.jpeg",
   ]
 
   return (
