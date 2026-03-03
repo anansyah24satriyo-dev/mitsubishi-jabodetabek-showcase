@@ -25,10 +25,15 @@ This project is designed to help Mitsubishi sales representatives display car ca
 ## 📂 Project Structure
 
 src/
+
 ├── assets/
+
 ├── components/
+
 ├── pages/
+
 ├── App.jsx
+
 └── main.jsx
 
 This project follows a modular React structure for scalability and maintainability.
