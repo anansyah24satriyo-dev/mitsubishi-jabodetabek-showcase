@@ -5,7 +5,7 @@ This project is designed to help Mitsubishi sales representatives display car ca
 
 ## 🚀 Live Demo
 
-    mitsubishi-jabodetabek-showcase.vercel.app
+https://mitsubishi-jabodetabek-showcase.vercel.app
 
 ## ✨ Features
 
