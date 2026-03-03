@@ -1,21 +1,53 @@
-# Mitsubishi Showcase
+# Mitsubishi Jabodetabek Showcase
 
-Frontend website for Mitsubishi car showcase built with:
+A responsive car showcase website built using React, Vite, and Tailwind CSS.  
+This project is designed to help Mitsubishi sales representatives display car catalogs and generate leads via WhatsApp integration.
 
-- React + Vite
-- Tailwind CSS
-- React Router
+## 🚀 Live Demo
 
-## Features
-- Car listing & filtering
-- Car detail page
-- WhatsApp integration
-- Sales consultant section
-- Responsive design
+    mitsubishi-jabodetabek-showcase.vercel.app
 
-## Tech Stack
+## ✨ Features
+
+- Car catalog showcase
+- Filtering by car model
+- WhatsApp lead integration
+- Responsive mobile-first design
+- Built with reusable React components
+
+## 🛠 Tech Stack
+
 - React
-- Tailwind CSS
 - Vite
+- Tailwind CSS
+- JavaScript (ES6+)
 
-© 2025 Mitsubishi Dealer
+## 📂 Project Structure
+
+src/
+├── assets/
+├── components/
+├── pages/
+├── App.jsx
+└── main.jsx
+
+This project follows a modular React structure for scalability and maintainability.
+
+## ⚙️ Installation & Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/anansyah24satriyo-dev/mitsubishi-jabodetabek-showcase.git
+
+Install dependencies:
+
+npm install
+
+Run development server:
+
+npm run dev
+
+Build for production:
+
+npm run build
